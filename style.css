@@ -1,0 +1,92 @@
+* {
+ box-sizing: border-box;
+ padding: 0;
+ margin: 0;
+ font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+body {
+   display: flex;
+   justify-content: center;
+}
+#boxForm {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(231, 231, 174);
+    margin: 20px;
+    width: 300px;
+    height: 500px;
+
+}
+
+#boxForm  h1{
+    padding-top: 30px;
+   font-size: 25px;
+
+}
+
+#myForm {
+    display: flex;
+    flex-direction: column;
+}
+
+
+#boxForm form label{
+    font-size: 15px;
+    padding-top: 10px;
+ 
+ }
+#boxForm form input{
+    border-color: transparent;
+ 
+ }
+
+ button {
+    margin-top: 10px;
+    height: 30px;
+    background-color: green;
+    color: aliceblue;
+    border: transparent;
+    border-radius: 10px;
+ }
+
+ #boxCategoria{
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   gap: 5px;
+    font-size: 14px;
+    margin-top: 20px;
+   
+ }
+
+ #boxCategoria span{
+  font-size: 11px;
+   
+ }
+ #resultIMC {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   background-color: azure;
+
+   font-size: 12px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+ }
+
+ 
+ .alertNome,  .alertAltura,  .alertPeso {
+
+   font-size: 13px;
+   color: red;
+ }
+
+ #boxResult {
+
+   display: none;
+ }
+
