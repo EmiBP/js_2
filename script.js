@@ -34,17 +34,14 @@ document.addEventListener('DOMContentLoaded', function(){
                     alertX.innerText = "";
                 })
 
-            
 
-                // camposValidos = false;
-               
                     
             } else {
                 boxResult.style.display ='block';
               
             }
             
-            // return camposValidos;
+          
             
         }
         
