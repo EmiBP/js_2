@@ -7,21 +7,26 @@ document.addEventListener('DOMContentLoaded', function(){
     
     myForm.addEventListener('submit', function(event){
         event.preventDefault();
-        // Peso
-        let inputPeso = document.getElementById("peso");
-        let alertaVermelhoPeso = document.querySelector('.alertPeso');
+        
         // Nome
         let inputNome = document.getElementById("nome");
         let alertaVermelhoNome = document.querySelector('.alertNome');
         // Altura
         let inputAltura = document.getElementById("altura");
         let alertaVermelhoAltura = document.querySelector('.alertAltura');
+        // Peso
+        let inputPeso = document.getElementById("peso");
+        let alertaVermelhoPeso = document.querySelector('.alertPeso');
         // Categoria
         let categoria = document.querySelector('#boxCategoria span');
+
+        validaCampos(inputNome, alertaVermelhoNome);
+        validaCampos(inputAltura, alertaVermelhoAltura);
+        validaCampos(inputPeso, alertaVermelhoPeso);
        
         function validaCampos(inputX, alertX) {
             let boxResult = document.getElementById('boxResult');
-        //    let camposValidos = true;
+
             if (inputX.value == "" ) {
                     
                 alertX.innerText = 'Campo obrigatório*';
@@ -45,9 +50,7 @@ document.addEventListener('DOMContentLoaded', function(){
             
         }
         
-         validaCampos(inputNome, alertaVermelhoNome);
-         validaCampos(inputAltura, alertaVermelhoAltura);
-         validaCampos(inputPeso, alertaVermelhoPeso);
+       
                                                  
         
         function calculoIMC(altura, peso) {
@@ -88,10 +91,10 @@ document.addEventListener('DOMContentLoaded', function(){
                                     `
         }
 
-        if (!validaCampos()) {
-            event.preventDefault();
-            
-        }
+
+        inputPeso.value = '';
+        inputAltura.value = '';
+        inputNome.value = '';
       
     });
 });
